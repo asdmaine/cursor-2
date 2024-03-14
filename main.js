@@ -4,7 +4,7 @@ var canvas = document.querySelector('#c'),
 	m = {x: null, y: null},
 	r = 0;
 
-var a = 20; // how many dots to have
+var a = 6; // how many dots to have
 var b = 5; // how fast to spin
 var c = 0.1; // how much to fade. 1 all, 0.5 half, 0 none
 var d = 100; // distance from the mouse
@@ -18,7 +18,7 @@ m.y = canvas.height / 2;
 
 window.addEventListener('mousemove', function(e){
 	TweenMax.to(m, 0.3, {x: e.clientX, y: e.clientY, ease: 'linear'})
-	document.querySelector('.message').className = 'hide';
+	// document.querySelector('.message').className = 'hide';
 })
 
 for(var i=0;i<a;i++){
@@ -26,7 +26,7 @@ for(var i=0;i<a;i++){
 		r: 360 / a * i,
 		p: {x: null, y: null},
 		w: Math.random()*5,
-		c: '#fff',
+		c: 'skyblue',
 		d: Math.random() * (d + 5) - 5,
 		s: Math.random() * (b + 5) - 5
 	})

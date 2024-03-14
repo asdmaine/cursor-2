@@ -4,7 +4,7 @@ var canvas = document.querySelector('#c'),
 	m = {x: null, y: null},
 	r = 0;
 
-var a = 6; // how many dots to have
+var a = 12; // how many dots to have
 var b = 5; // how fast to spin
 var c = 0.1; // how much to fade. 1 all, 0.5 half, 0 none
 var d = 100; // distance from the mouse
